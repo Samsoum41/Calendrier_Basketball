@@ -22,7 +22,7 @@ export default function App() {
               <Ionicons name="basketball-outline"  size ={prop.size} color={prop.color}/>
             )
           }}/>
-          <Tab.Screen name="Settings" component={Favoris} options={{
+          <Tab.Screen name="Favorites" component={Favoris} options={{
             tabBarIcon: prop => (
               <Ionicons name = "star-outline" size ={prop.size}  color ={prop.color}/>
             )

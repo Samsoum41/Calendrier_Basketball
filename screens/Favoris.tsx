@@ -18,7 +18,7 @@ function Favoris (){
     } else {
         return(
             <View>
-                <EnTete/>
+                <EnTete date={new Date().toLocaleDateString('en-GB')}/>
                 {/* It shows the list of marked teams */}
                 <FlatList
                     data={favorites}
