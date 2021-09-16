@@ -1,6 +1,6 @@
 # Mon-calendrier-basket-ball  [![Build Status](https://app.bitrise.io/app/e2b86904be4881de/status.svg?token=0fgbS-8_sgFUvdhDzAJxBw&branch=master)](https://app.bitrise.io/app/e2b86904be4881de)
 
-##Présentation
+## Présentation
 
 C'est un projet à but d'apprentissage ayant pour objectif de prendre en main les principaux outils de développement mobile utilisés lorsque l'on développe avec React Native. Ce projet m'a été suggéré dans le cadre du processus de recrutement chez __BAM,__ la liste des jalons est disponible en fin de page.
 
@@ -25,7 +25,7 @@ __NB :__ Étant donné que les matchs de NBA ne reprennnent qu'en octobre 2021, 
 
 ___
 
-##Principaux points traités : 
+## Principaux points traités : 
 
 | Task                        | Progression      |
 | ----------------------------|:----------------:|
@@ -43,6 +43,8 @@ ___
 | Faire tourner les test lors sur Bitrise au push sur github                                    |:heavy_check_mark:|
 | Publier son appli pour android                                                                |:heavy_check_mark:|
 
+
+J'ai réalisé des premiers tests unitaires avec Jest pour prendre en main Jest, cependant, il me reste à faire le test de composant asynchrones comme celui contenant la commande fetch
 ___
-##Lien expo :
+## Lien expo :
 Afin de pouvoir utiliser l'application sur un smartphone Android muni de l'application Expo Go, vous pouvez utiliser ce lien : https://exp.host/@samsoum41/BasketBallCalendar
