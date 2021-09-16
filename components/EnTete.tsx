@@ -3,27 +3,6 @@ import {View, Image, Text, StyleSheet} from 'react-native';
 import AppLoading from 'expo-app-loading';
 import { useFonts } from 'expo-font';
 
-const EnTete = () => {
-    let [fontsLoaded] = useFonts({'Tillilium' : require('../font/Titillium_Web/TitilliumWeb-Regular.ttf')});
-    if (!fontsLoaded) {
-        return (<AppLoading/>);
-    } else {
-        return(
-            <View style = {headStyle.viewContainer}>
-                <Image source={require('../logo-nba.png')}
-                    style = {headStyle.logo} />
-                <View style={headStyle.textView}>
-                    <Text style={headStyle.title}> Basketball championship</Text>
-                    <Text style={headStyle.date}>
-                        <Text style= {headStyle.dayStyle}>Day : </Text>{new Date().toLocaleDateString('en-GB')}
-                    </Text>
-                </View>
-            </View>
-        ); 
-    }
-
-}
-
 const headStyle = StyleSheet.create({
     viewContainer :{
         flexDirection: 'row',
@@ -62,5 +41,26 @@ const headStyle = StyleSheet.create({
         color: 'black',
         fontSize: 28,
     }
-})
+});
+const EnTete = (props) => {
+    let [fontsLoaded] = useFonts({'Tillilium' : require('../font/Titillium_Web/TitilliumWeb-Regular.ttf')});
+    if (!fontsLoaded) {
+        return (<AppLoading/>);
+    } else {
+        return(
+            <View style = {headStyle.viewContainer}>
+                <Image source={require('../logo-nba.png')}
+                    style = {headStyle.logo} />
+                <View style={headStyle.textView}>
+                    <Text style={headStyle.title}> Basketball championship</Text>
+                    <Text style={headStyle.date}>
+                        <Text style= {headStyle.dayStyle}>Day : </Text>{props.date}
+                    </Text>
+                </View>
+            </View>
+        ); 
+    }
+
+};
+
 export default EnTete;

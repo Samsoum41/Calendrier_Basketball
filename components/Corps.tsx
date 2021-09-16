@@ -43,7 +43,7 @@ const Corps = () => {
       {/* It shows all NBA matchs of the day */}
       <FlatList
         keyExtractor= {(item, index) => item.key}
-        data={matchs}
+        data={matchs} 
         renderItem={({ item }) => (
           <Item fstTeam={item.fstTeam} scdTeam={item.scdTeam} />
         )}

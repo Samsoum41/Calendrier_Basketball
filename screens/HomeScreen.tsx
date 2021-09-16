@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import React, {useState} from 'react';
 import { StyleSheet, Text, View, Image} from 'react-native';
 import EnTete from '../components/EnTete';
@@ -11,7 +10,7 @@ It has to show every today NBA's matchs.
 const HomePage = () =>{
   return(
     <View style={{flexDirection:'column', flex: 1}}>
-      <EnTete/>
+      <EnTete date={new Date().toLocaleDateString('en-GB')}/>
       <Corps/>
     </View>
   )
