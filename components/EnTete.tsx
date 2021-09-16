@@ -43,7 +43,7 @@ const headStyle = StyleSheet.create({
     }
 });
 const EnTete = (props) => {
-    let [fontsLoaded] = useFonts({'Tillilium' : require('../font/Titillium_Web/TitilliumWeb-Regular.ttf')});
+    let [fontsLoaded] = useFonts({'Tillilium' : require('../assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf')});
     if (!fontsLoaded) {
         return (<AppLoading/>);
     } else {

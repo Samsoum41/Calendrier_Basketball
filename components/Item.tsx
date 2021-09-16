@@ -5,7 +5,7 @@ import { useFonts } from 'expo-font';
 import IconButton from './IconButton';
 
 const Item = (props) =>{
-    let [fontsLoaded] = useFonts({'Tillilium':require('../font/Titillium_Web/TitilliumWeb-Regular.ttf')})
+    let [fontsLoaded] = useFonts({'Tillilium':require('../assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf')})
     if (!fontsLoaded){
         return(<AppLoading/>);
     } else {

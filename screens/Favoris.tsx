@@ -11,7 +11,7 @@ It has to show the favorite teams of the user.
 */
 function Favoris (){
     const favorites = useAppSelector((state) => state.favorite.value);
-    let [fontsLoaded] = useFonts({'Tillilium':require('../font/Titillium_Web/TitilliumWeb-Regular.ttf')})
+    let [fontsLoaded] = useFonts({'Tillilium':require('../assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf')})
     console.log(favorites)
     if (!fontsLoaded){
         return(<AppLoading/>);
